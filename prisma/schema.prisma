@@ -1,0 +1,27 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL") // NeonDB URL here
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String?
+  role      String   @default("USER") // ADMIN for dashboard
+  createdAt DateTime @default(now())
+}
+
+model Car {
+  id          String   @id @default(cuid())
+  model       String
+  brand       String
+  price       Float
+  image       String
+  description String
+  createdAt   DateTime @default(now())
+}
