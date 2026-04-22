@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Filter, Search, ChevronRight } from "lucide-react";
-import Navbar from "@/components/Navbar";
+
 // Dummy Data for VIP Cars
 const CAR_DATA = [
   { id: 1, brand: "Lamborghini", model: "Aventador SVJ", price: 517000, img: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&q=80&w=800", category: "Supercar" },
@@ -20,7 +20,7 @@ export default function InventoryPage() {
   return (
     
     <div className="min-h-screen bg-black text-white pt-28 pb-10">
-    <Navbar /> 
+   
       {/* Background Subtle Gradient */}
       <div className="fixed inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-red-900/10 via-black to-black -z-10"></div>
 

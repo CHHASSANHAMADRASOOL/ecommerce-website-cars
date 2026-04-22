@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Navbar from "@/components/Navbar";
+
 export default function ContactPage() {
   const [status, setStatus] = useState("");
 
@@ -25,7 +25,6 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen relative flex items-center justify-center py-20 px-4">
-      <Navbar />
       {/* Background VIP Image */}
       <div className="absolute inset-0 -z-10">
         <img 

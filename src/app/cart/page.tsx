@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Trash2, Plus, Minus, ArrowRight, ShoppingBag } from "lucide-react";
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
+
 
 export default function CartPage() {
   // Dummy Cart Data (Real app mein yeh Context ya Redux se aayega)
@@ -42,7 +42,7 @@ export default function CartPage() {
   return (
     
     <div className="min-h-screen bg-black text-white pt-32 pb-20 px-6">
-      <Navbar />
+      
       {/* Background Car Silhouette */}
       <div className="fixed bottom-0 right-0 opacity-10 -z-10">
         <h1 className="text-[20vw] font-black italic leading-none select-none">CART</h1>

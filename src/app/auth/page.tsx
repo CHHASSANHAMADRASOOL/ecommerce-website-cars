@@ -1,12 +1,12 @@
 "use client";
 import { useState } from "react";
-import Navbar from "@/components/Navbar";
+
 export default function AuthPage() {
   const [isLogin, setIsLogin] = useState(true);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-black px-4">
-      <Navbar />
+  
 
       {/* Background Car Image */}
       <div className="absolute inset-0 z-0">

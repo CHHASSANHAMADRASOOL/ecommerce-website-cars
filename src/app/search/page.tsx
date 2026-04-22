@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { Search, X, SlidersHorizontal, ChevronRight, Gauge, DollarSign } from "lucide-react";
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
+
 
 // Dummy Data - Aap isse NeonDB se bhi fetch kar sakte hain
 const ALL_CARS = [
@@ -27,7 +27,7 @@ export default function SearchPage() {
 
   return (
     <div className="min-h-screen bg-black text-white pt-32 pb-20 px-6 relative overflow-hidden">
-      <Navbar />
+  
       {/* Background VIP Glow */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-red-600/10 rounded-full blur-[120px] -z-10"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-red-900/5 rounded-full blur-[120px] -z-10"></div>

@@ -1,6 +1,6 @@
 "use client";
 import { ShieldCheck, Gauge, PenTool, Zap, Car, HelpCircle } from "lucide-react";
-import Navbar from "@/components/Navbar";
+
 const services = [
   {
     title: "EXOTIC RENTAL",
@@ -37,7 +37,7 @@ const services = [
 export default function ServicesPage() {
   return (
     <div className="relative min-h-screen bg-black text-white pt-32 pb-20 px-6 overflow-hidden">
-      <Navbar />
+    
       {/* Background VIP Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10">
         <img 
